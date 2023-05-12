@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- REMIX ICON -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- CSS EXTERNO -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <title>Super Calculadora</title>
+  </head>
+  <body>
+    <header>
+      <h1>Super Calculadora</h1>
+
+      <div class="inputCtn">
+        <label for="primeiroNumero">Primeiro Número (A)</label>
+        <input type="number" name="primeiroNumero" id="primeiroNumero" autofocus />
+
+        <label for="segundoNumero">Segundo Número (B)</label>
+        <input type="number" name="segundoNumero" id="segundoNumero" />
+
+        <input
+          type="button"
+          onclick="calcular()"
+          value="Calcular"
+          id="botaoCalcular"
+        />
+      </div>
+    </header>
+
+    <main>
+      <div>
+        <p class="calculoRotulo">Soma</p>
+        <p class="resultado" id="resultadoSoma"></p>
+      </div>
+
+      <div>
+        <p class="calculoRotulo">Subtração A - B</p>
+        <p class="resultado" id="resultadoSubA"></p>
+      </div>
+
+      <div>
+        <p class="calculoRotulo">Subtração B - A</p>
+        <p class="resultado" id="resultadoSubB"></p>
+      </div>
+
+      <div>
+        <p class="calculoRotulo">Multiplicação</p>
+        <p class="resultado" id="resultadoMult"></p>
+      </div>
+
+      <div>
+        <p class="calculoRotulo">Divisão A / B</p>
+        <p class="resultado" id="resultadoDivA"></p>
+      </div>
+
+      <div>
+        <p class="calculoRotulo">Divisão B / A</p>
+        <p class="resultado" id="resultadoDivB"></p>
+      </div>
+
+      <div>
+        <p class="calculoRotulo">Potência A / B</p>
+        <p class="resultado" id="resultadoPotA"></p>
+      </div>
+
+      <div>
+        <p class="calculoRotulo">Potência B / A</p>
+        <p class="resultado" id="resultadoPotB"></p>
+      </div>
+
+      <div>
+        <p class="calculoRotulo">Raiz quadrada de A</p>
+        <p class="resultado" id="resultadoRaiz"></p>
+      </div>
+
+      <div>
+        <p class="calculoRotulo">Raiz quadrada de B</p>
+        <p class="resultado" id="resultadoRaizB"></p>
+      </div>
+
+      <div>
+        <p class="calculoRotulo">Fatorial de A</p>
+        <p class="resultado" id="resultadoFatA"></p>
+      </div>
+
+      <div>
+        <p class="calculoRotulo">Fatorial de B</p>
+        <p class="resultado" id="resultadoFatB"></p>
+      </div>
+
+      <div>
+        <p class="calculoRotulo">Porcentagem de A em relação a B</p>
+        <p class="resultado" id="resultadoPorcentagem"></p>
+      </div>
+
+      <div>
+        <p class="calculoRotulo">Porcentagem de B em relação a A</p>
+        <p class="resultado" id="resultadoPorcentagemB"></p>
+      </div>
+
+      <div>
+        <p class="calculoRotulo">Média</p>
+        <p class="resultado" id="media"></p>
+      </div>
+    </main>
+
+
+    <footer>
+        &copy; 2023 - Developer Giovane Souza
+
+        <div class="socialMedia">
+          <a
+            href="https://www.linkedin.com/in/developergiovanesouza/"
+            target="_blank"
+            class="ri-linkedin-box-fill"
+          ></a>
+          <a
+            href="https://github.com/giovanesouza"
+            target="_blank"
+            class="ri-github-fill"
+          ></a>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  max-width: 90rem;
+  margin: 0 auto;
+  background-color: #14171a;
+  font-size: 1.6rem;
+}
+
+header {
+  background-color: #1e1e1e;
+  border-bottom: 0.2rem solid #ccc;
+  padding: 2rem;
+}
+
+h1 {
+  text-align: center;
+  color: #8ecd32;
+}
+
+.inputCtn {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+label {
+  color: #8ecd32;
+}
+
+input {
+  padding: 0.5rem;
+  color: #14171a;
+  font-weight: bold;
+  outline: none;
+  padding: 1rem;
+}
+
+#botaoCalcular {
+  border: none;
+  background-color: #8ecd32;
+  border-radius: 0.5rem;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+main div {
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+/* Representa o título da operação matemática */
+.calculoRotulo {
+  color: #6980d6;
+  margin-bottom: 1rem;
+}
+
+footer {
+  background-color: #1e1e1e;
+  border-top: 0.1rem solid #ccc;
+
+  margin-top: 1rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+footer .socialMedia {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+footer .socialMedia a {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+footer .socialMedia a:hover {
+  color: #8ecd32;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+  html {
+    font-size: 58%;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  .inputCtn {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  main div {
+    text-align: center;
+  }
+}
+
+@media (max-width: 425px) {
+  html {
+    font-size: 55%;
+  }
+
+  main {
+    grid-template-columns: 1fr;
+  }
+}
